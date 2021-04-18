@@ -1,0 +1,14 @@
+@mixin center($element-width, $element-margin: 0 auto) {
+  max-width: $element-width;
+  margin: $element-margin;
+}
+
+@mixin site-button(
+  $button-padding: 10px,
+  $button-radius: 20px,
+  $button-background: #79addc
+) {
+  padding: $button-padding;
+  border-radius: $button-radius;
+  background-color: $button-background;
+}

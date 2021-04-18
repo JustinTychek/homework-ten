@@ -1,0 +1,180 @@
+.booking-form {
+  max-width: 834px;
+  min-height: 900px;
+  //   890?
+  margin: 0 auto;
+  // background-color: rgb(235, 228, 220);
+
+  .booking-form-title {
+    font-family: ProximaNova;
+    font-size: 60px;
+    margin-top: 70px;
+  }
+
+  .form-flex {
+    display: flex;
+    margin-bottom: 20px;
+    .small-text-entry-box {
+      min-width: 344px;
+      height: 58px;
+      border: 1px solid $site-blue;
+      padding-left: 20px;
+      font-size: 18px;
+      font-family: GillSans;
+      outline: none;
+    }
+
+    .medium-text-entry-box {
+      width: 470px;
+      height: 58px;
+      margin-left: 20px;
+      border: 1px solid $site-blue;
+      padding-left: 20px;
+      font-size: 18px;
+      font-family: GillSans;
+      outline: none;
+    }
+
+    .form-text-1 {
+      font-size: 18px;
+      font-family: GillSans;
+      display: flex;
+      align-items: center;
+      padding-top: 15px;
+      padding-right: 40px;
+    }
+
+    .tiny-text-entry-box {
+      width: 115px;
+      height: 58px;
+      margin-left: 20px;
+      border: 1px solid $site-blue;
+      padding-left: 20px;
+      font-size: 18px;
+      font-family: GillSans;
+      outline: none;
+      background-image: url(../images/down-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: 80px;
+      background-size: 20px;
+    }
+
+    .form-text-2 {
+      font-size: 18px;
+      font-family: GillSans;
+      display: flex;
+      align-items: center;
+      padding-top: 15px;
+      padding-left: 87px;
+      padding-right: 30px;
+    }
+  }
+
+  .form-flex-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .large-text-entry-box {
+      width: 735px;
+      height: 58px;
+      margin-left: 20px;
+      border: 1px solid $site-blue;
+      padding-left: 20px;
+      font-size: 18px;
+      font-family: GillSans;
+      outline: none;
+      background-image: url(../images/calendar.svg);
+      background-repeat: no-repeat;
+      background-position: 700px;
+      background-size: 19px;
+    }
+
+    .form-text {
+      font-size: 18px;
+      font-family: GillSans;
+      display: flex;
+      align-items: center;
+      padding-top: 15px;
+    }
+  }
+  .large-text-area {
+    width: 834px;
+    height: 192px;
+    border: 1px solid $site-blue;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: GillSans;
+    outline: none;
+  }
+
+  .submit {
+    background-color: $site-blue;
+    border: none;
+    outline: 0;
+    color: white;
+    font-family: GillSans;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 813px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .booking-form {
+    padding-bottom: 100px;
+    .booking-form-title {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+    }
+    .form-flex {
+      flex-direction: column;
+      align-items: center;
+      .small-text-entry-box {
+        margin-bottom: 20px;
+        width: 80%;
+        margin-left: 19px;
+      }
+
+      .medium-text-entry-box {
+        width: 80%;
+      }
+
+      .form-text-2 {
+        margin-left: -80px;
+      }
+    }
+    .form-flex-2 {
+      flex-direction: column;
+      align-items: center;
+      .large-text-entry-box {
+        width: 93%;
+
+        // background-image: url(../images/calendar.svg);
+        // background-repeat: no-repeat;
+        background-position: 97%;
+      }
+
+      .form-text {
+        align-self: flex-start;
+        margin-left: 40px;
+      }
+    }
+
+    .large-text-area {
+      width: 95%;
+      margin-left: 15px;
+      margin-top: 25px;
+    }
+
+    .submit {
+      width: 90%;
+    }
+  }
+}

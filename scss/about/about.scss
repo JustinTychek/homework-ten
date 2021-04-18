@@ -1,0 +1,96 @@
+.about {
+  max-width: 980px;
+  //   background-color: aqua;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 179px;
+
+  .about-top-section {
+    h1 {
+      font-family: ProximaNova;
+      font-size: 60px;
+      font-style: normal;
+      border-bottom: black solid 2px;
+      width: 170px;
+      margin-bottom: 36px;
+      font-weight: normal;
+    }
+    p {
+      font-family: GillSans;
+      font-size: 16px;
+    }
+  }
+
+  .about-bottom-section {
+    margin-top: 100px;
+    h2 {
+      font-family: ProximaNova;
+      font-size: 40px;
+      border-bottom: black solid 2px;
+      width: 225px;
+      margin-bottom: 36px;
+      font-weight: normal;
+    }
+
+    .client {
+      max-width: 676px;
+      min-height: 150px;
+      display: flex;
+      margin-bottom: 38px;
+      .client-image {
+        width: 260px;
+        height: 150px;
+        // background-color: bisque;
+        // img {
+        //   height: 100%;
+        // }
+      }
+
+      .client1 {
+        background-image: url(../images/about-client-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client2 {
+        background-image: url(../images/about-client-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client-text {
+        position: relative;
+        min-height: 150px;
+        width: 462px;
+        padding-left: 21px;
+        // background-color: blue;
+
+        .client-quote {
+          font-family: GillSans;
+          font-size: 16px;
+          font-style: italic;
+          p:last-of-type {
+            margin-bottom: 20px;
+          }
+        }
+
+        .client-name {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-style: ProximaNova;
+          font-size: 20px;
+          color: #79addc;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    padding: 15px;
+  }
+}

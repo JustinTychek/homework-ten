@@ -1,0 +1,39 @@
+.white-nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  // margin-bottom: -60px;
+  border-bottom: white solid 2px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  .logo {
+    height: 42px;
+    width: 92px;
+    background-image: url(../images/logo/logo-white.png);
+  }
+
+  .links {
+    height: 42px;
+    max-width: 542px;
+    align-self: center;
+    display: flex;
+    font-family: GillSans;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      margin: auto;
+      border-right: $site-blue solid 1.5px;
+      padding-right: 20px;
+      padding-left: 20px;
+      // put a  | between the anchor tags and style that
+    }
+
+    .contact-link {
+      border-right: none;
+      margin-right: -20px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.israel-body {
+  width: 981;
+  margin: 0 auto;
+}
+.israel-body header {
+  height: 200px;
+  width: 981;
+  background-image: url(../images/tour/tour-israel/israel-tour-01.jpg);
+}

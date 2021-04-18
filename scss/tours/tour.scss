@@ -1,0 +1,191 @@
+.tour {
+  header {
+    // margin: 0 auto;
+    // max-width: 981px;
+    @include center(981px);
+    margin-top: 50px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, $overlay-black, $overlay-black),
+      url(../images/tour/tours-header.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 60px;
+      font-family: ProximaNova;
+      text-transform: uppercase;
+      color: $white;
+      letter-spacing: 10px;
+    }
+  }
+
+  .tours {
+    @include center(818px, 48px auto 0 auto);
+    min-height: 200px;
+    // background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .promos {
+      width: 236px;
+      height: 304px;
+      // background-color: red;
+      //   margin-right: 10px;
+      margin-bottom: 55px;
+
+      .promo-title {
+        font-size: 60px;
+        color: $white;
+        text-align: center;
+        font-family: ProximaNova;
+        padding-top: 50px;
+      }
+
+      .promo-price {
+        font-size: 30px;
+        color: $white;
+        text-align: center;
+        font-family: ProximaNova;
+        // margin-top: -20px;
+      }
+
+      .promo-button {
+        @include site-button(10px, 50px);
+        font-family: GillSans;
+        color: $white;
+        width: 133px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 52px;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+    .promo-israel {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-01.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-usa {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-02.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-australia {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-03.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-new-zl {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-04.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-france {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-05.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-egypt {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-06.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-japan {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-07.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-canada {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-08.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .promo-uae {
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-09.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+@media all and (max-width: 880px) {
+  .tour {
+    .tours {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

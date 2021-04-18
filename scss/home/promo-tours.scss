@@ -1,0 +1,103 @@
+.promo-tours {
+  min-height: 304px;
+  max-width: 1280px;
+  margin: -50px auto 0 auto;
+  // background-color: aqua;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 160px;
+  padding-right: 160px;
+
+  .promo {
+    height: 304px;
+    width: 236px;
+
+    .israel-promo {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-01.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .usa-promo {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-02.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .australia-promo {
+      height: 304px;
+      width: 236px;
+      background-image: linear-gradient(
+          to right,
+          $overlay-black,
+          $overlay-black
+        ),
+        url(../images/tour/tour-03.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .promo-title {
+      font-size: 60px;
+      color: $white;
+      text-align: center;
+      font-family: ProximaNova;
+      padding-top: 50px;
+    }
+
+    .promo-price {
+      font-size: 30px;
+      color: $white;
+      text-align: center;
+      font-family: ProximaNova;
+      margin-top: -20px;
+    }
+
+    .learn-more-button {
+      font-family: GillSans;
+      color: $white;
+      width: 133px;
+      height: 40px;
+      margin: 0 auto;
+      margin-top: 52px;
+      font-size: 15px;
+      background-color: $site-blue;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+
+    .promo {
+      margin-bottom: 30px;
+    }
+  }
+}
